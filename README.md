@@ -50,9 +50,9 @@ $ python manage.py runserver
 
 7. Post video:
 
-![POST-video](Figure/postvid)
+![POST-video](Figure/postvid.png)
 
-![RESPONSE-video](Figure/responsevid)
+![RESPONSE-video](Figure/responsevid.png)
 
 
 8. Download video 
