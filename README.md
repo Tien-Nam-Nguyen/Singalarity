@@ -1,6 +1,6 @@
 # Facial recognition on video
 
-![COVER]{Figure/cover.png}
+![COVER](Figure/cover.png)
 
 
 1. Create a conda environment .conda
@@ -50,14 +50,14 @@ $ python manage.py runserver
 
 7. Post video:
 
-![POST-video]{Figure/Screenshot from 2023-05-19 18-27-24.png}
+![POST-video](Figure/postvid)
 
-![RESPONSE-video]{Figure/Screenshot from 2023-05-19 18-35-30.png}
+![RESPONSE-video](Figure/responsevid)
 
 
 8. Download video 
 
-![DOWNLOAD-video]{Figure/url.png}
+![DOWNLOAD-video](Figure/url.png)
 
 
 
