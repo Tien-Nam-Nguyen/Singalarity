@@ -6,6 +6,8 @@ from .serializer import VideoSerializer
 from .models import Video
 from .vid_processing import process
 import os
+from django.core.files.base import File
+from django.http import QueryDict
 
 # Create your views here.
 
@@ -15,12 +17,16 @@ def upload_vid(request):
         serializer = VideoSerializer(data=request.data)
         if serializer.is_valid():
             Video.objects.all().delete()
-            fi = os.listdir('media/video')[0]
-            os.remove(os.path.join('media/video', fi))
+            fi = os.listdir('media/video')
+            if len(fi) > 0:
+                for name in fi:
+                    os.remove(os.path.join('media/video', name))
             serializer.save()
             filename = os.listdir('media/video')[0]
             process(filename)
-            return Response(serializer.data, status= status.HTTP_201_CREATED)
+            # vi = open(os.path.join('media/video', filename), 'rb')
+            oridict = {'caption': 'response', 'video': '/media/video/response.avi'}
+            return Response(oridict, status= status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status= status.HTTP_400_BAD_REQUEST)
         

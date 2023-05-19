@@ -1,1 +1,4 @@
 /dlib
+/project/db.sqlite3
+/project/media/video/*.mp4
+/project/media/video/*.avi
