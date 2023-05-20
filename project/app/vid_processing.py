@@ -21,7 +21,7 @@ def process(videofile):
         # print(f'check {rgb.shape}')
         # rgb = imutils.resize(frame, width= 750)
 
-        boxes = face_recognition.face_locations(rgb, model='hog')
+        boxes = face_recognition.face_locations(rgb, model='cnn')
         encodings = face_recognition.face_encodings(rgb, boxes)
         names = []
         for encoding in encodings:
