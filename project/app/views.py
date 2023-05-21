@@ -23,7 +23,7 @@ def upload_vid(request):
             filename = os.listdir('media/video')[0]
             process(filename)
             # vi = open(os.path.join('media/video', filename), 'rb')
-            oridict = {'caption': 'response', 'video': 'http://127.0.0.1:8000/media/video/response.mp4'}
+            oridict = {'caption': 'response', 'video': 'http://127.0.0.1:8000/media/video/response.avi'}
             return Response(oridict, status= status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status= status.HTTP_400_BAD_REQUEST)
