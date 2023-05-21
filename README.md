@@ -26,21 +26,25 @@ $ pip install -r requirements.txt
 ```
 
 
-4. Image augmentation:
+4. Put face images of people you want to recognize to project/Image with file name {person_name}0.jpg
+
+
+
+5. Image augmentation:
 ```console
 $ cd Image/
 $ python augmentation.py
 ```
 
 
-5. Image encode:
+6. Image encode:
 ```console
 $ python encode.py
 $ cd ..
 ```
 
 
-6. Run Django server:
+7. Run Django server:
 ```console
 $ python manage.py makemigrations
 $ python manage.py migrate
@@ -48,14 +52,22 @@ $ python manage.py runserver
 ```
 
 
-7. Post video:
+8. Post video:
+- Using Postman:
 
 ![POST-video](Figure/postvid.png)
 
 ![RESPONSE-video](Figure/responsevid.png)
 
+- Using video upload site:
 
-8. Download video 
+![Upload-site](Figure/uploadsite.png)
+
+![Response-url](Figure/responselink.png)
+
+
+
+9. Download video 
 
 ![DOWNLOAD-video](Figure/url.png)
 
