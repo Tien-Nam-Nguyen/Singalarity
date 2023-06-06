@@ -72,7 +72,3 @@ $ python manage.py runserver
 ![DOWNLOAD-video](Figure/url.png)
 
 This is changed using Gitlab
-
-
-
-
